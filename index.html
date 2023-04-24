@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="layout.css" />
   </head>
   <body>
-    <section class="wrapper">
+    <section class="flexbox">
       <header class="header">
-        <section class="logo">
-          <img src="./images/lrg_logo.png" alt="Citrus Cafe Logo" />
-        </section>
-        <nav class="main-nav">
-          <ul class="main-nav">
+        <figure>
+          <img src="./images/lrg_logo.png" alt="Citrus Cafe Logo" /></figure>
+        </header>
+
+        <nav class="nav">
+          <ul>
             <li>Home</li>
             <li>Menus</li>
             <li>Reservation</li>
@@ -23,10 +30,10 @@
             <li>Contact</li>
           </ul>
         </nav>
-      </header>
+      
 
-      <article id="vision">
-        <section>
+      <section class="vision">
+        <section class="vision-text">
           <p>
             A new neighborhood kitchen using organic and sustainable ingredients
             all locally sourced.
@@ -35,6 +42,7 @@
             <img src="./images/vision-image.png" alt="Chef cooking" />
           </figure>
         </section>
+      </section>
       </article>
 
       <article id="boxes">
