@@ -119,10 +119,10 @@ body {
 }
 /* Tablet*/
 @media screen and (min-width: 426px) {
-  .navbar ul {
+  .nav ul {
     flex-direction: row;
   }
-  .navbar ul > * {
+  .nav ul > * {
     flex-grow: 1;
   }
   .vision {
@@ -160,7 +160,22 @@ body {
   .events {
     padding-inline-start: 0.5rem;
   }
-  .events {
+  .news {
     margin-block-start: 1rem;
+  }
+  /* Desktop */
+  @media screen and (min-width: 769px) {
+    body {
+      padding: 0 2rem 0 2rem;
+    }
+    .events {
+      padding-inline-end: 0.5rem;
+    }
+    .news {
+      flex-basis: 0;
+      flex-grow: 1;
+      margin-block-start: 0;
+      padding-inline-start: 0.5rem;
+    }
   }
 }
