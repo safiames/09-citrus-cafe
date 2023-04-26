@@ -146,4 +146,21 @@ body {
     margin: auto 0 auto 0;
     flex-basis: 80%;
   }
+  .boxes {
+    gap: 0%;
+  }
+  .specials,
+  .events {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  .specials {
+    padding-inline-end: 0.5rem;
+  }
+  .events {
+    padding-inline-start: 0.5rem;
+  }
+  .events {
+    margin-block-start: 1rem;
+  }
 }
