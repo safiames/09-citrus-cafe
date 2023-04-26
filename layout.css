@@ -63,14 +63,14 @@ body {
   display: none;
 }
 
-#boxes {
+.boxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-block-end: 1rem;
   gap: 1rem;
 }
-#boxes > * {
+.boxes > * {
   background-color: white;
   padding: 1rem;
   flex-basis: 100%;
@@ -116,4 +116,34 @@ body {
 }
 .footer section p:nth-child(3) {
   color: black;
+}
+/* Tablet*/
+@media screen and (min-width: 426px) {
+  .navbar ul {
+    flex-direction: row;
+  }
+  .navbar ul > * {
+    flex-grow: 1;
+  }
+  .vision {
+    background-color: white;
+  }
+  .vision-text {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(./images/cork-pattern-bg.jpeg);
+    padding-inline-start: 1rem;
+  }
+  .vision-text figure {
+    display: block;
+    flex-basis: 50%;
+  }
+  .vision-text figure img {
+    max-width: 100%;
+    float: right;
+  }
+  .vision p {
+    margin: auto 0 auto 0;
+    flex-basis: 80%;
+  }
 }
